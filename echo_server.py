@@ -6,7 +6,7 @@ server_address = ('0.0.0.0', 8080)
 server_socket.bind(server_address)
 
 server_socket.listen(1)
-print("Echo server is running on port 8080...")
+print("Echo server is running...")
 
 while True:
     connection, client_address = server_socket.accept()
