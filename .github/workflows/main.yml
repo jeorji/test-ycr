@@ -22,8 +22,8 @@ jobs:
 
     - name: Build Docker image
       run: |
-        docker build -t cr.yandex/crpbgajavsirjrcsdfsi/myapp:latest .
+        docker build -t cr.yandex/shiny-ycr/myapp:latest .
 
     - name: Push Docker image to Yandex Container Registry
       run: |
-        docker push cr.yandex/crpbgajavsirjrcsdfsi/myapp:latest
+        docker push cr.yandex/shiny-ycr/myapp:latest
