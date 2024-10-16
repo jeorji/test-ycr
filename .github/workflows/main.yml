@@ -15,5 +15,5 @@ jobs:
       - name: Set up Docker config
         run: echo "${{ secrets.DOCKER_AUTH_CONFIG }}" > ~/.docker/config.json
 
-      - name: Log in to Docker Registry
-        run: docker login cr.yandex/crpbgajavsirjrcsdfsi
+      - name: Build Docker image
+        run: docker build -t cr.yandex/crpbgajavsirjrcsdfsi/your-image .
